@@ -6,3 +6,8 @@ yarn.lock
 # Ignore documentation
 LICENSE.md
 README.md
+
+# Ignore shadcn
+src/lib/components/utils.ts
+src/lib/components/ui
+
