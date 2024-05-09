@@ -58,185 +58,244 @@ import vue from '$lib/images/tech/vue.svg'
 import terminal from '$lib/images/tech/windows_terminal.svg'
 
 export interface Tech {
+    name: string
     icon: string
     class?: string
 }
 
 export const tech: Tech[] = [
     {
+        name: 'Actix',
         icon: actix
     },
     {
+        name: 'Android',
         icon: android
     },
     {
+        name: 'Android Studio',
         icon: androidstudio
     },
     {
+        name: 'Chromium Embedded Framework',
         icon: cef
     },
     {
+        name: 'CloudFlare',
         icon: cloudflare
     },
     {
+        name: 'C++',
         icon: cpp
     },
     {
+        name: 'C#',
         icon: csharp
     },
     {
+        name: 'CSS',
         icon: css
     },
     {
+        name: 'Dart',
         icon: dart
     },
     {
+        name: 'Debian',
         icon: debian
     },
     {
+        name: 'Docker',
         icon: docker
     },
     {
+        name: 'dotPeek',
         icon: dotpeek
     },
     {
+        name: 'Flutter',
         icon: flutter
     },
     {
+        name: 'Git',
         icon: git
     },
     {
+        name: 'Go',
         icon: go
     },
     {
+        name: 'GoLand',
         icon: goland
     },
     {
+        name: 'Gradle',
         icon: gradle
     },
     {
+        name: 'HTML',
         icon: html
     },
     {
+        name: 'Intellij IDEA',
         icon: intellij
     },
     {
+        name: 'Java',
         icon: java
     },
     {
+        name: 'JavaScript',
         icon: javascript
     },
     {
+        name: 'JUnit',
         icon: junit
     },
     {
+        name: 'JWT',
         icon: jwt
     },
     {
+        name: 'Kotiln',
         icon: kotlin
     },
     {
+        name: 'Linux',
         icon: linux
     },
     {
+        name: 'Lucia Auth',
         icon: lucia
     },
     {
+        name: 'lwjgl',
         icon: lwjgl
     },
     {
+        name: 'MariaDB',
         icon: mariadb
     },
     {
+        name: 'Maven',
         icon: maven
     },
     {
+        name: 'MinIO',
         icon: minio,
         class: 'h-14 w-auto'
     },
     {
+        name: 'MongoDB',
         icon: mongodb,
         class: 'h-14 w-auto'
     },
     {
+        name: 'MySQL',
         icon: mysql
     },
     {
+        name: 'Node.js',
         icon: node
     },
     {
+        name: 'npm',
         icon: npm
     },
     {
+        name: 'OpenGL',
         icon: opengl
     },
     {
+        name: 'PHP',
         icon: php
     },
     {
+        name: 'pnpm',
         icon: pnpm
     },
     {
+        name: 'PostgreSQL',
         icon: postgresql
     },
     {
+        name: 'Prisma',
         icon: prisma
     },
     {
+        name: 'PuTTY',
         icon: putty
     },
     {
+        name: 'Python',
         icon: python
     },
     {
+        name: 'RabbitMQ',
         icon: rabbitmq
     },
     {
+        name: 'Redis',
         icon: redis
     },
     {
+        name: 'Rider',
         icon: rider
     },
     {
+        name: 'Rust',
         icon: rust
     },
     {
+        name: 'Selenium',
         icon: selenium
     },
     {
+        name: 'Sentry',
         icon: sentry
     },
     {
+        name: 'Spring',
         icon: spring
     },
     {
+        name: 'Svelte',
         icon: svelte
     },
     {
+        name: 'Tailwind CSS',
         icon: tailwindcss
     },
     {
+        name: 'Tauri',
         icon: tauri
     },
     {
+        name: 'TypeScript',
         icon: typescript
     },
     {
+        name: 'Ubuntu',
         icon: ubuntu
     },
     {
+        name: 'Visual Studio',
         icon: visualstudio
     },
     {
+        name: 'Vite',
         icon: vite
     },
     {
+        name: 'Visual Studio Code',
         icon: vscode
     },
     {
+        name: 'Vue.js',
         icon: vue
     },
     {
+        name: 'Windows Terminal',
         icon: terminal
     }
 ]

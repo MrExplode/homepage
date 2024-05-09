@@ -5,6 +5,7 @@
     import TechWidget from '@/TechWidget.svelte'
     import TypeWriter from '@/TypeWriter.svelte'
     import { cn } from '@/utils'
+    import { onMount } from 'svelte'
 
     const dummy = [...tech]
     shuffleArray(dummy)
@@ -15,12 +16,26 @@
         cols.push(dummy.splice(0, colCount))
     }
 
-    function shuffleArray(array) {
+    $: freezeStates = ['']
+    $: {
+        console.log(freezeStates)
+    }
+
+    function shuffleArray(array: Array<unknown>) {
         for (let i = array.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1))
             ;[array[i], array[j]] = [array[j], array[i]]
         }
     }
+
+    const mouse = (i: number, s: string) => {
+        freezeStates[i] = s
+        freezeStates = [...freezeStates]
+    }
+
+    onMount(() => {
+        for (let i = 0; i < colNum; i++) freezeStates.push('')
+    })
 </script>
 
 <div class="container flex h-screen w-screen flex-col justify-center">
@@ -38,9 +53,14 @@
             class="ml-auto flex max-h-full gap-4 overflow-hidden [mask-image:_linear-gradient(to_top,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]"
         >
             {#each cols as col, i}
-                <div>
+                <!-- svelte-ignore a11y-no-static-element-interactions -->
+                <div
+                    on:mouseenter={() => mouse(i, '[animation-play-state:_paused]')}
+                    on:mouseleave={() => mouse(i, '')}
+                >
                     <div
                         class={cn(
+                            freezeStates[i],
                             i % 2 ? 'animate-infinite-scroll-reverse' : 'animate-infinite-scroll'
                         )}
                     >
@@ -50,6 +70,7 @@
                     </div>
                     <div
                         class={cn(
+                            freezeStates[i],
                             i % 2 ? 'animate-infinite-scroll-reverse' : 'animate-infinite-scroll'
                         )}
                     >
