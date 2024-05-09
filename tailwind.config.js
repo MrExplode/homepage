@@ -58,8 +58,8 @@ const config = {
                 sans: [...fontFamily.sans]
             },
             animation: {
-                'infinite-scroll': 'infinite-scroll 30s linear infinite',
-                'infinite-scroll-reverse': 'infinite-scroll-reverse 30s linear infinite'
+                'infinite-scroll': 'infinite-scroll 40s linear infinite',
+                'infinite-scroll-reverse': 'infinite-scroll-reverse 40s linear infinite'
             },
             keyframes: {
                 'infinite-scroll': {
