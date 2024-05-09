@@ -11,7 +11,6 @@
         let i = 0
         while (get(str) != to) {
             str.set(get(str) + to.charAt(i++))
-            tick()
             await delay(60)
         }
     }
@@ -29,7 +28,7 @@
             index = ++index % list.length
             await erase(content)
             await write(content, list[index])
-        }, 7000)
+        }, 5000)
 
         return () => clearInterval(i)
     })

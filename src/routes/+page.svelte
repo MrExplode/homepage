@@ -17,9 +17,6 @@
     }
 
     $: freezeStates = ['']
-    $: {
-        console.log(freezeStates)
-    }
 
     function shuffleArray(array: Array<unknown>) {
         for (let i = array.length - 1; i > 0; i--) {
