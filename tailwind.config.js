@@ -56,6 +56,20 @@ const config = {
             },
             fontFamily: {
                 sans: [...fontFamily.sans]
+            },
+            animation: {
+                'infinite-scroll': 'infinite-scroll 30s linear infinite',
+                'infinite-scroll-reverse': 'infinite-scroll-reverse 30s linear infinite'
+            },
+            keyframes: {
+                'infinite-scroll': {
+                    from: { transform: 'translateY(-100%)' },
+                    to: { transform: 'translateY(0)' }
+                },
+                'infinite-scroll-reverse': {
+                    from: { transform: 'translateY(0)' },
+                    to: { transform: 'translateY(-100%)' }
+                }
             }
         }
     }
