@@ -3,6 +3,7 @@
     import { tech, type Tech } from '$lib/tech'
 
     import TechWidget from '@/TechWidget.svelte'
+    import TypeWriter from '@/TypeWriter.svelte'
     import { cn } from '@/utils'
 
     const dummy = [...tech]
@@ -28,7 +29,9 @@
         <div class="flex flex-col gap-4">
             <h1 class="text-4xl font-bold tracking-tight">SunStorm</h1>
             <p class="text-muted-foreground">
-                21 year old <span class="font-bold">software developer</span>
+                21 year old <TypeWriter
+                    list={['software developer', 'devops engineer', 'drummer', 'light designer']}
+                />
             </p>
         </div>
         <div
