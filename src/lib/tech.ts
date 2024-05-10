@@ -12,6 +12,8 @@ import docker from '$lib/images/tech/docker.svg'
 import dotpeek from '$lib/images/tech/dotpeek.svg'
 import flutter from '$lib/images/tech/flutter.svg'
 import git from '$lib/images/tech/git.svg'
+// import github from '$lib/images/tech/github-white.svg'
+import githubDark from '$lib/images/tech/github.svg'
 import go from '$lib/images/tech/go.svg'
 import goland from '$lib/images/tech/goland.svg'
 import gradle from '$lib/images/tech/gradle.svg'
@@ -129,6 +131,11 @@ export const tech: Tech[] = [
     {
         name: 'Git',
         icon: git,
+        category: 'version control'
+    },
+    {
+        name: 'GitHub',
+        icon: githubDark,
         category: 'version control'
     },
     {
