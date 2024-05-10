@@ -7,7 +7,7 @@
 </script>
 
 <img src={avatar} alt="avatar" class="h-32 w-32 rounded-full" />
-<div class="flex flex-col gap-4">
+<div class="flex flex-col items-center gap-4 md:items-start">
     <h1 class="text-4xl font-bold tracking-tight">SunStorm</h1>
     <p class="text-muted-foreground">
         21 year old <TypeWriter list={descriptions} />

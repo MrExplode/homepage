@@ -6,7 +6,7 @@
 </script>
 
 <div class="container flex h-screen w-screen flex-col justify-center">
-    <div class="flex max-h-[70%] items-center gap-8">
+    <div class="flex max-h-[70%] flex-col items-center gap-8 md:flex-row">
         <Bio />
         <TechDisplay class="ml-auto max-h-full" />
     </div>
