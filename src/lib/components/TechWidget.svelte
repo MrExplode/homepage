@@ -16,7 +16,12 @@
     <HoverCard.Content>
         <div class="flex items-center gap-4">
             <img src={t.icon} alt="" class="h-10" />
-            <h3 class="font-bold tracking-tight">{t.name}</h3>
+            <div>
+                <h3 class="font-bold tracking-tight">{t.name}</h3>
+                {#if t.category}
+                    <p class="text-sm text-muted-foreground">{t.category}</p>
+                {/if}
+            </div>
         </div>
     </HoverCard.Content>
 </HoverCard.Root>

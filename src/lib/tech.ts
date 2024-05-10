@@ -60,13 +60,15 @@ import terminal from '$lib/images/tech/windows_terminal.svg'
 export interface Tech {
     name: string
     icon: string
+    category?: string
     class?: string
 }
 
 export const tech: Tech[] = [
     {
         name: 'Actix',
-        icon: actix
+        icon: actix,
+        category: 'library'
     },
     {
         name: 'Android',
@@ -74,11 +76,13 @@ export const tech: Tech[] = [
     },
     {
         name: 'Android Studio',
-        icon: androidstudio
+        icon: androidstudio,
+        category: 'IDE'
     },
     {
         name: 'Chromium Embedded Framework',
-        icon: cef
+        icon: cef,
+        category: 'framework'
     },
     {
         name: 'CloudFlare',
@@ -86,11 +90,13 @@ export const tech: Tech[] = [
     },
     {
         name: 'C++',
-        icon: cpp
+        icon: cpp,
+        category: 'language'
     },
     {
         name: 'C#',
-        icon: csharp
+        icon: csharp,
+        category: 'language'
     },
     {
         name: 'CSS',
@@ -98,11 +104,13 @@ export const tech: Tech[] = [
     },
     {
         name: 'Dart',
-        icon: dart
+        icon: dart,
+        category: 'language'
     },
     {
         name: 'Debian',
-        icon: debian
+        icon: debian,
+        category: 'os'
     },
     {
         name: 'Docker',
@@ -110,27 +118,33 @@ export const tech: Tech[] = [
     },
     {
         name: 'dotPeek',
-        icon: dotpeek
+        icon: dotpeek,
+        category: 'tool'
     },
     {
         name: 'Flutter',
-        icon: flutter
+        icon: flutter,
+        category: 'framework'
     },
     {
         name: 'Git',
-        icon: git
+        icon: git,
+        category: 'version control'
     },
     {
         name: 'Go',
-        icon: go
+        icon: go,
+        category: 'language'
     },
     {
         name: 'GoLand',
-        icon: goland
+        icon: goland,
+        category: 'IDE'
     },
     {
         name: 'Gradle',
-        icon: gradle
+        icon: gradle,
+        category: 'build system'
     },
     {
         name: 'HTML',
@@ -138,61 +152,75 @@ export const tech: Tech[] = [
     },
     {
         name: 'Intellij IDEA',
-        icon: intellij
+        icon: intellij,
+        category: 'IDE'
     },
     {
         name: 'Java',
-        icon: java
+        icon: java,
+        category: 'language'
     },
     {
         name: 'JavaScript',
-        icon: javascript
+        icon: javascript,
+        category: 'language'
     },
     {
         name: 'JUnit',
-        icon: junit
+        icon: junit,
+        category: 'framework'
     },
     {
         name: 'JWT',
-        icon: jwt
+        icon: jwt,
+        category: 'technology'
     },
     {
         name: 'Kotiln',
-        icon: kotlin
+        icon: kotlin,
+        category: 'language'
     },
     {
         name: 'Linux',
-        icon: linux
+        icon: linux,
+        category: 'os'
     },
     {
         name: 'Lucia Auth',
-        icon: lucia
+        icon: lucia,
+        category: 'library'
     },
     {
         name: 'lwjgl',
-        icon: lwjgl
+        icon: lwjgl,
+        category: 'framework'
     },
     {
         name: 'MariaDB',
-        icon: mariadb
+        icon: mariadb,
+        category: 'database'
     },
     {
         name: 'Maven',
-        icon: maven
+        icon: maven,
+        category: 'build system'
     },
     {
         name: 'MinIO',
         icon: minio,
-        class: 'h-14 w-auto'
+        class: 'h-14 w-auto',
+        category: 'S3 storage'
     },
     {
         name: 'MongoDB',
         icon: mongodb,
-        class: 'h-14 w-auto'
+        class: 'h-14 w-auto',
+        category: 'database'
     },
     {
         name: 'MySQL',
-        icon: mysql
+        icon: mysql,
+        category: 'database'
     },
     {
         name: 'Node.js',
@@ -200,35 +228,43 @@ export const tech: Tech[] = [
     },
     {
         name: 'npm',
-        icon: npm
+        icon: npm,
+        category: 'package manager'
     },
     {
         name: 'OpenGL',
-        icon: opengl
+        icon: opengl,
+        category: 'framework'
     },
     {
         name: 'PHP',
-        icon: php
+        icon: php,
+        category: 'language'
     },
     {
         name: 'pnpm',
-        icon: pnpm
+        icon: pnpm,
+        category: 'package manager'
     },
     {
         name: 'PostgreSQL',
-        icon: postgresql
+        icon: postgresql,
+        category: 'database'
     },
     {
         name: 'Prisma',
-        icon: prisma
+        icon: prisma,
+        category: 'framework'
     },
     {
         name: 'PuTTY',
-        icon: putty
+        icon: putty,
+        category: 'tool'
     },
     {
         name: 'Python',
-        icon: python
+        icon: python,
+        category: 'language'
     },
     {
         name: 'RabbitMQ',
@@ -240,62 +276,77 @@ export const tech: Tech[] = [
     },
     {
         name: 'Rider',
-        icon: rider
+        icon: rider,
+        category: 'IDE'
     },
     {
         name: 'Rust',
-        icon: rust
+        icon: rust,
+        category: 'language'
     },
     {
         name: 'Selenium',
-        icon: selenium
+        icon: selenium,
+        category: 'framework'
     },
     {
         name: 'Sentry',
-        icon: sentry
+        icon: sentry,
+        category: 'analytics'
     },
     {
         name: 'Spring',
-        icon: spring
+        icon: spring,
+        category: 'framework'
     },
     {
         name: 'Svelte',
-        icon: svelte
+        icon: svelte,
+        category: 'framework'
     },
     {
         name: 'Tailwind CSS',
-        icon: tailwindcss
+        icon: tailwindcss,
+        category: 'library'
     },
     {
         name: 'Tauri',
-        icon: tauri
+        icon: tauri,
+        category: 'framework'
     },
     {
         name: 'TypeScript',
-        icon: typescript
+        icon: typescript,
+        category: 'language'
     },
     {
         name: 'Ubuntu',
-        icon: ubuntu
+        icon: ubuntu,
+        category: 'os'
     },
     {
         name: 'Visual Studio',
-        icon: visualstudio
+        icon: visualstudio,
+        category: 'IDE'
     },
     {
         name: 'Vite',
-        icon: vite
+        icon: vite,
+        category: 'build system'
     },
     {
         name: 'Visual Studio Code',
-        icon: vscode
+        icon: vscode,
+        category: 'IDE'
     },
     {
         name: 'Vue.js',
-        icon: vue
+        icon: vue,
+        category: 'framework'
     },
     {
         name: 'Windows Terminal',
-        icon: terminal
+        icon: terminal,
+        category: 'tool'
     }
 ]
