@@ -17,7 +17,9 @@ import githubDark from '$lib/images/tech/github.svg'
 import go from '$lib/images/tech/go.svg'
 import goland from '$lib/images/tech/goland.svg'
 import gradle from '$lib/images/tech/gradle.svg'
+import grafana from '$lib/images/tech/grafana.svg'
 import html from '$lib/images/tech/html5.svg'
+import influxdb from '$lib/images/tech/influxdb.svg'
 import intellij from '$lib/images/tech/intellij.svg'
 import java from '$lib/images/tech/java.svg'
 import javascript from '$lib/images/tech/javascript.svg'
@@ -51,6 +53,7 @@ import spring from '$lib/images/tech/spring.svg'
 import svelte from '$lib/images/tech/svelte.svg'
 import tailwindcss from '$lib/images/tech/tailwindcss.svg'
 import tauri from '$lib/images/tech/tauri.svg'
+import telegraf from '$lib/images/tech/telegraf.svg'
 import typescript from '$lib/images/tech/typescript.svg'
 import ubuntu from '$lib/images/tech/ubuntu.svg'
 import visualstudio from '$lib/images/tech/visualstudio.svg'
@@ -154,6 +157,11 @@ export const tech: Tech[] = [
         category: 'build system'
     },
     {
+        name: 'Grafana',
+        icon: grafana,
+        category: 'observability platform'
+    },
+    {
         name: 'HTML',
         icon: html
     },
@@ -161,6 +169,11 @@ export const tech: Tech[] = [
         name: 'Intellij IDEA',
         icon: intellij,
         category: 'IDE'
+    },
+    {
+        name: 'InfluxDB',
+        icon: influxdb,
+        category: 'time series database'
     },
     {
         name: 'Java',
@@ -320,6 +333,11 @@ export const tech: Tech[] = [
         name: 'Tauri',
         icon: tauri,
         category: 'framework'
+    },
+    {
+        name: 'Telegraf',
+        icon: telegraf,
+        category: 'metrics collection agent'
     },
     {
         name: 'TypeScript',
