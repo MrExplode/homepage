@@ -50,7 +50,7 @@
 
 @layer base {
     * {
-        @apply border-border select-none;
+        @apply select-none border-border;
     }
     body {
         @apply bg-background text-foreground;
