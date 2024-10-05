@@ -2,5 +2,9 @@
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "prettier.documentSelectors": ["**/*.svelte"],
-    "files.eol": "\n"
+    "files.eol": "\n",
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "always"
+    },
+    "eslint.validate": ["javascript", "typescript", "svelte"]
 }
