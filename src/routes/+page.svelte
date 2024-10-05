@@ -1,5 +1,4 @@
 <script lang="ts">
-    import avatar from '$lib/images/avatar.png'
     import Bio from '@/Bio.svelte'
 
     import TechDisplay from '@/TechDisplay.svelte'

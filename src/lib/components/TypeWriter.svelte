@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { onMount, tick } from 'svelte'
+    import { onMount } from 'svelte'
     import { get, writable, type Writable } from 'svelte/store'
 
     export let list: string[]
