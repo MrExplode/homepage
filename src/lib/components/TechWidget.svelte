@@ -4,7 +4,11 @@
 
     import * as HoverCard from '@/ui/hover-card'
 
-    export let t: Tech
+    interface Props {
+        t: Tech;
+    }
+
+    let { t }: Props = $props();
 </script>
 
 <HoverCard.Root>

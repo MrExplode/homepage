@@ -5,8 +5,12 @@
     import { tech, type Tech } from '$lib/tech'
     import TechWidget from '@/TechWidget.svelte'
 
-    let className: string | undefined
-    export { className as class }
+    interface Props {
+        class: string | undefined;
+    }
+
+    let { class: className }: Props = $props();
+    
 
     const dummy = [...tech]
     shuffleArray(dummy)
@@ -17,7 +21,8 @@
         cols.push(dummy.splice(0, colCount))
     }
 
-    $: freezeStates = ['']
+    let freezeStates = $state(['']);
+    
 
     function shuffleArray(array: Array<unknown>) {
         for (let i = array.length - 1; i > 0; i--) {
@@ -43,10 +48,10 @@
     )}
 >
     {#each cols as col, i}
-        <!-- svelte-ignore a11y-no-static-element-interactions -->
+        <!-- svelte-ignore a11y_no_static_element_interactions -->
         <div
-            on:mouseenter={() => mouse(i, '[animation-play-state:_paused]')}
-            on:mouseleave={() => mouse(i, '')}
+            onmouseenter={() => mouse(i, '[animation-play-state:_paused]')}
+            onmouseleave={() => mouse(i, '')}
         >
             <div
                 class={cn(

@@ -1,6 +1,8 @@
 <script lang="ts">
     import ThemeSwitch from '@/ThemeSwitch.svelte'
     import '../app.css'
+
+    let { children } = $props()
 </script>
 
 <svelte:head>
@@ -8,4 +10,4 @@
 </svelte:head>
 
 <ThemeSwitch />
-<slot />
+{@render children?.()}

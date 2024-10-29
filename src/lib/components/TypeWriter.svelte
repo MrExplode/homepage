@@ -2,7 +2,11 @@
     import { onMount } from 'svelte'
     import { get, writable, type Writable } from 'svelte/store'
 
-    export let list: string[]
+    interface Props {
+        list: string[];
+    }
+
+    let { list }: Props = $props();
 
     let index = 0
     const content = writable(list[0])
