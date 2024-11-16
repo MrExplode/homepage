@@ -5,10 +5,10 @@
     import * as HoverCard from '@/ui/hover-card'
 
     interface Props {
-        t: Tech;
+        t: Tech
     }
 
-    let { t }: Props = $props();
+    let { t }: Props = $props()
 </script>
 
 <HoverCard.Root>

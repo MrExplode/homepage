@@ -3,10 +3,10 @@
     import { get, writable, type Writable } from 'svelte/store'
 
     interface Props {
-        list: string[];
+        list: string[]
     }
 
-    let { list }: Props = $props();
+    let { list }: Props = $props()
 
     let index = 0
     const content = writable(list[0])

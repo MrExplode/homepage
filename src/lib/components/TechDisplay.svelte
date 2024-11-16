@@ -6,11 +6,10 @@
     import TechWidget from '@/TechWidget.svelte'
 
     interface Props {
-        class: string | undefined;
+        class: string | undefined
     }
 
-    let { class: className }: Props = $props();
-    
+    let { class: className }: Props = $props()
 
     const dummy = [...tech]
     shuffleArray(dummy)
@@ -21,8 +20,7 @@
         cols.push(dummy.splice(0, colCount))
     }
 
-    let freezeStates = $state(['']);
-    
+    let freezeStates = $state([''])
 
     function shuffleArray(array: Array<unknown>) {
         for (let i = array.length - 1; i > 0; i--) {
