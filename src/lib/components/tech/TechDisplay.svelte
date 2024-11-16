@@ -3,7 +3,7 @@
 
     import { cn } from '@/utils'
     import { tech, type Tech } from '$lib/tech'
-    import TechWidget from '@/TechWidget.svelte'
+    import TechWidget from '@/tech/TechWidget.svelte'
 
     interface Props {
         class: string | undefined

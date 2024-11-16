@@ -4,7 +4,7 @@
 
     import { Button } from '@/ui/button'
     import Bio from '@/Bio.svelte'
-    import TechDisplay from '@/TechDisplay.svelte'
+    import TechDisplay from '@/tech/TechDisplay.svelte'
     import ArrowDown from 'lucide-svelte/icons/arrow-down'
 
     const lenis = new Lenis({ autoRaf: true })
