@@ -58,7 +58,7 @@
                 )}
             >
                 {#each col as t}
-                    <TechWidget {t} />
+                    <TechWidget {t} class="m-2 w-14" />
                 {/each}
             </div>
             <div
@@ -69,7 +69,7 @@
                 )}
             >
                 {#each col as t}
-                    <TechWidget {t} />
+                    <TechWidget {t} class="m-2 w-14" />
                 {/each}
             </div>
         </div>

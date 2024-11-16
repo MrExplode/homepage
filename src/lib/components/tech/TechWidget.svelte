@@ -6,15 +6,16 @@
 
     interface Props {
         t: Tech
+        class: string
     }
 
-    let { t }: Props = $props()
+    let { t, class: className }: Props = $props()
 </script>
 
 <HoverCard.Root>
     <HoverCard.Trigger>
         <div class="flex items-center justify-center">
-            <img src={t.icon} alt="" class={cn('m-2 w-14', t.class)} />
+            <img src={t.icon} alt="" class={cn(className, t.class)} />
         </div>
     </HoverCard.Trigger>
     <HoverCard.Content>

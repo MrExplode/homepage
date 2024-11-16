@@ -6,6 +6,7 @@
     import Bio from '@/Bio.svelte'
     import TechDisplay from '@/tech/TechDisplay.svelte'
     import ArrowDown from 'lucide-svelte/icons/arrow-down'
+    import ProjectDisplay from '@/projects/ProjectDisplay.svelte'
 
     const lenis = new Lenis({ autoRaf: true })
     const snap = new Snap(lenis, {})
@@ -34,5 +35,6 @@
     </Button>
 </div>
 <div bind:this={projects} class="container flex h-screen w-screen flex-col justify-center">
-    <h1>Projects</h1>
+    <h1 class="mb-10 text-4xl font-bold tracking-tight">Projects</h1>
+    <ProjectDisplay />
 </div>
