@@ -15,7 +15,7 @@
 <HoverCard.Root>
     <HoverCard.Trigger>
         <div class="flex items-center justify-center">
-            <img src={t.icon} alt="" class={cn(className, t.class)} />
+            <img src={t.icon} alt="" class={cn(t.class, className)} />
         </div>
     </HoverCard.Trigger>
     <HoverCard.Content>
