@@ -1,9 +1,11 @@
 <script lang="ts">
-    import Bio from '@/Bio.svelte'
-    import TechDisplay from '@/TechDisplay.svelte'
-
     import Lenis from 'lenis'
     import Snap from 'lenis/snap'
+
+    import { Button } from '@/ui/button'
+    import Bio from '@/Bio.svelte'
+    import TechDisplay from '@/TechDisplay.svelte'
+    import ArrowDown from 'lucide-svelte/icons/arrow-down'
 
     const lenis = new Lenis({ autoRaf: true })
     const snap = new Snap(lenis, {})
@@ -22,7 +24,15 @@
         <Bio />
         <TechDisplay class="ml-auto max-h-full" />
     </div>
+    <Button
+        variant="outline"
+        size="icon"
+        class="mx-auto translate-y-20 rounded-full shadow-md"
+        onclick={() => lenis.scrollTo(projects!)}
+    >
+        <ArrowDown />
+    </Button>
 </div>
 <div bind:this={projects} class="container flex h-screen w-screen flex-col justify-center">
-    <h1>Hello</h1>
+    <h1>Projects</h1>
 </div>
