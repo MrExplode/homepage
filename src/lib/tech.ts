@@ -34,11 +34,13 @@ import maven_svg from '$lib/images/tech/maven.svg'
 import minio_svg from '$lib/images/tech/minio.png'
 import mongodb_svg from '$lib/images/tech/mongodb.svg'
 import mysql_svg from '$lib/images/tech/mysql.svg'
+import nginx_svg from '$lib/images/tech/nginx.svg'
 import node_svg from '$lib/images/tech/node.svg'
 import npm_svg from '$lib/images/tech/npm.svg'
 import opengl_svg from '$lib/images/tech/opengl.svg'
 import php_svg from '$lib/images/tech/php.svg'
 import pnpm_svg from '$lib/images/tech/pnpm.svg'
+import portainer_svg from '$lib/images/tech/portainer.svg'
 import postgresql_svg from '$lib/images/tech/postgresql.svg'
 import prisma_svg from '$lib/images/tech/prisma.svg'
 import putty_svg from '$lib/images/tech/putty.svg'
@@ -276,6 +278,12 @@ export const mysql: Tech = {
     category: 'database'
 }
 
+export const nginx: Tech = {
+    name: 'Nginx',
+    icon: nginx_svg,
+    category: 'web server'
+}
+
 export const nodejs: Tech = {
     name: 'Node.js',
     icon: node_svg
@@ -303,6 +311,12 @@ export const pnpm: Tech = {
     name: 'pnpm',
     icon: pnpm_svg,
     category: 'package manager'
+}
+
+export const portainer: Tech = {
+    name: 'Portainer',
+    icon: portainer_svg,
+    class: 'h-14 w-auto'
 }
 
 export const postgresql: Tech = {
@@ -471,12 +485,14 @@ export const tech: Tech[] = [
     minio,
     mongodb,
     mysql,
+    nginx,
     nodejs,
     npm,
     opengl,
     php,
     pnpm,
     postgresql,
+    portainer,
     prisma,
     putty,
     python,
