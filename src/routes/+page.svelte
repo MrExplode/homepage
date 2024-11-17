@@ -15,8 +15,12 @@
     let projects: HTMLElement | null = null
 
     $effect(() => {
-        snap.addElement(index!)
-        snap.addElement(projects!)
+        snap.addElement(index!, {
+            align: ['start']
+        })
+        snap.addElement(projects!, {
+            align: ['start', 'center', 'end']
+        })
     })
 </script>
 
@@ -34,7 +38,7 @@
         <ArrowDown />
     </Button>
 </div>
-<div bind:this={projects} class="container flex h-screen w-screen flex-col justify-center">
+<div bind:this={projects} class="container flex min-h-screen w-screen flex-col justify-center">
     <h1 class="mb-10 text-4xl font-bold tracking-tight">Projects</h1>
     <ProjectDisplay />
 </div>
