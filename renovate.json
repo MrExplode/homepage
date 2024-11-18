@@ -1,0 +1,31 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "extends": ["config:recommended"],
+    "schedule": ["every weekend"],
+    "automergeSchedule": ["at any time"],
+    "packageRules": [
+        {
+            "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+            "automerge": true,
+            "automergeType": "branch"
+        },
+        {
+            "groupName": "web tooling",
+            "matchPackageNames": [
+                "*prettier*",
+                "*eslint*",
+                "@types/eslint",
+                "vite",
+                "@playwright/*"
+            ]
+        },
+        {
+            "groupName": "Svelte",
+            "matchPackageNames": ["svelte*", "@sveltejs/*"]
+        },
+        {
+            "groupName": "TailwindCSS",
+            "matchPackageNames": ["tailwind*", "clsx", "autoprefixer", "postcss"]
+        }
+    ]
+}
