@@ -11,3 +11,6 @@ README.md
 src/lib/components/utils.ts
 src/lib/components/ui
 
+# Ignore Github Actions
+.github/
+
