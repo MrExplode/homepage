@@ -22,7 +22,7 @@
         {/if}
     </div>
     {#if project.tech}
-        <div class="flex space-x-4">
+        <div class="flex flex-wrap gap-4">
             {#each project.tech as t}
                 <TechWidget {t} class="h-6 max-w-7" />
             {/each}
