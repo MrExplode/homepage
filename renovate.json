@@ -3,6 +3,7 @@
     "extends": ["config:recommended"],
     "schedule": ["every weekend"],
     "automergeSchedule": ["at any time"],
+    "rangeStrategy": "bump",
     "packageRules": [
         {
             "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
