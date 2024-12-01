@@ -47,6 +47,7 @@ import putty_svg from '$lib/images/tech/putty.svg'
 import python_svg from '$lib/images/tech/python.svg'
 import rabbitmq_svg from '$lib/images/tech/rabbitmq.svg'
 import redis_svg from '$lib/images/tech/redis.svg'
+import renovate_svg from '$lib/images/tech/renovate.svg'
 import rider_svg from '$lib/images/tech/rider.svg'
 import rust_svg from '$lib/images/tech/rust.svg'
 import selenium_svg from '$lib/images/tech/selenium.svg'
@@ -353,6 +354,13 @@ export const redis: Tech = {
     icon: redis_svg
 }
 
+export const renovate: Tech = {
+    name: 'Renovate',
+    icon: renovate_svg,
+    category: 'Dependency manager',
+    class: 'object-cover h-14'
+}
+
 export const rider: Tech = {
     name: 'Rider',
     icon: rider_svg,
@@ -498,6 +506,7 @@ export const tech: Tech[] = [
     python,
     rabbitmq,
     redis,
+    renovate,
     rider,
     rust,
     selenium,
