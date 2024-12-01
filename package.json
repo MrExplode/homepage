@@ -16,7 +16,7 @@
         "@playwright/test": "^1.49.0",
         "@sveltejs/adapter-static": "^3.0.6",
         "@sveltejs/kit": "^2.8.1",
-        "@sveltejs/vite-plugin-svelte": "^4.0.1",
+        "@sveltejs/vite-plugin-svelte": "^5.0.1",
         "@types/eslint": "^9.6.1",
         "@typescript-eslint/eslint-plugin": "^8.15.0",
         "@typescript-eslint/parser": "^8.15.0",
