@@ -2,7 +2,6 @@
     import avatar from '$lib/images/avatar.png'
     import github from '$lib/images/tech/github.svg'
     import githubWhite from '$lib/images/tech/github-white.svg'
-    import bsky from '$lib/images/social/bsky.svg'
 
     import TypeWriter from '@/TypeWriter.svelte'
     import { Button } from '@/ui/button'
