@@ -12,18 +12,11 @@
     let { class: className }: Props = $props()
 
     const dummy = [...tech]
-    shuffleArray(dummy)
     const colNum = 5
     const colCount = Math.ceil(dummy.length / colNum)
     const cols: Tech[][] = []
     while (dummy.length) {
         cols.push(dummy.splice(0, colCount))
-    }
-    function shuffleArray(array: Array<unknown>) {
-        for (let i = array.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1))
-            ;[array[i], array[j]] = [array[j], array[i]]
-        }
     }
 </script>
 
