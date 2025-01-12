@@ -2,6 +2,7 @@
     import type { Tech } from '$lib/tech'
 
     import * as HoverCard from '@/ui/hover-card'
+    import { Portal } from 'bits-ui'
 
     interface Props {
         t: Tech
@@ -18,15 +19,17 @@
             <img src={t.icon} alt={t.name} class={t.class + ' ' + className} />
         </div>
     </HoverCard.Trigger>
-    <HoverCard.Content>
-        <div class="flex items-center gap-4">
-            <img src={t.icon} alt="" class="h-10" />
-            <div>
-                <h3 class="font-bold tracking-tight">{t.name}</h3>
-                {#if t.category}
-                    <p class="text-sm text-muted-foreground">{t.category}</p>
-                {/if}
+    <Portal>
+        <HoverCard.Content>
+            <div class="flex items-center gap-4">
+                <img src={t.icon} alt="" class="h-10" />
+                <div>
+                    <h3 class="font-bold tracking-tight">{t.name}</h3>
+                    {#if t.category}
+                        <p class="text-sm text-muted-foreground">{t.category}</p>
+                    {/if}
+                </div>
             </div>
-        </div>
-    </HoverCard.Content>
+        </HoverCard.Content>
+    </Portal>
 </HoverCard.Root>
