@@ -1,6 +1,5 @@
 <script lang="ts">
     import type { Tech } from '$lib/tech'
-    import { cn } from '@/utils'
 
     import * as HoverCard from '@/ui/hover-card'
 
@@ -15,7 +14,8 @@
 <HoverCard.Root>
     <HoverCard.Trigger>
         <div class="flex items-center justify-center">
-            <img src={t.icon} alt={t.name} class={cn(t.class, className)} />
+            <!-- dumb string concat instead of cn, because prerendering breaks cn (in my experience) -->
+            <img src={t.icon} alt={t.name} class={t.class + ' ' + className} />
         </div>
     </HoverCard.Trigger>
     <HoverCard.Content>
