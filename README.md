@@ -22,3 +22,6 @@ pnpm run build
 ```
 
 You can preview the production build with `pnpm run preview`.
+
+
+Stripped down icon infinity scroller demo [here](https://github.com/MrExplode/homepage/tree/infiniscroller).
