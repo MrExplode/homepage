@@ -7,21 +7,24 @@
     import TechDisplay from '@/tech/TechDisplay.svelte'
     import ArrowDown from 'lucide-svelte/icons/arrow-down'
     import ProjectDisplay from '@/projects/ProjectDisplay.svelte'
-
-    const lenis = new Lenis({ autoRaf: true })
-    const snap = new Snap(lenis, {})
+    import { browser } from '$app/environment'
 
     let index: HTMLElement | null = null
     let projects: HTMLElement | null = null
 
-    $effect(() => {
-        snap.addElement(index!, {
-            align: ['start']
+    if (browser) {
+        const lenis = new Lenis({ autoRaf: true })
+        const snap = new Snap(lenis, {})
+
+        $effect(() => {
+            snap.addElement(index!, {
+                align: ['start']
+            })
+            snap.addElement(projects!, {
+                align: ['start', 'center', 'end']
+            })
         })
-        snap.addElement(projects!, {
-            align: ['start', 'center', 'end']
-        })
-    })
+    }
 </script>
 
 <div bind:this={index} class="container flex h-screen w-screen flex-col justify-center">
