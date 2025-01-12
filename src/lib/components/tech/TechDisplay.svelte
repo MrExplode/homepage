@@ -19,24 +19,12 @@
     while (dummy.length) {
         cols.push(dummy.splice(0, colCount))
     }
-
-    let freezeStates = $state([''])
-
     function shuffleArray(array: Array<unknown>) {
         for (let i = array.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1))
             ;[array[i], array[j]] = [array[j], array[i]]
         }
     }
-
-    const mouse = (i: number, s: string) => {
-        freezeStates[i] = s
-        freezeStates = [...freezeStates]
-    }
-
-    onMount(() => {
-        for (let i = 0; i < colNum; i++) freezeStates.push('')
-    })
 </script>
 
 <div
@@ -46,14 +34,10 @@
     )}
 >
     {#each cols as col, i}
-        <!-- svelte-ignore a11y_no_static_element_interactions -->
-        <div
-            onmouseenter={() => mouse(i, '[animation-play-state:_paused]')}
-            onmouseleave={() => mouse(i, '')}
-        >
+        <div class="group">
             <div
                 class={cn(
-                    freezeStates[i],
+                    'group-hover:[animation-play-state:_paused]',
                     i % 2 ? 'animate-infinite-scroll-reverse' : 'animate-infinite-scroll'
                 )}
             >
@@ -64,7 +48,7 @@
             <div
                 aria-hidden="true"
                 class={cn(
-                    freezeStates[i],
+                    'group-hover:[animation-play-state:_paused]',
                     i % 2 ? 'animate-infinite-scroll-reverse' : 'animate-infinite-scroll'
                 )}
             >
