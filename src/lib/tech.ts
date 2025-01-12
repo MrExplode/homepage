@@ -1,6 +1,7 @@
 import actix_svg from '$lib/images/tech/actix.png'
 import android_svg from '$lib/images/tech/android.svg'
 import androidstudio_svg from '$lib/images/tech/androidstudio.svg'
+import bun_svg from '$lib/images/tech/bun.svg'
 import cef_svg from '$lib/images/tech/cef.svg'
 import cloudflare_svg from '$lib/images/tech/cloudflare.svg'
 import cpp_svg from '$lib/images/tech/cpp.svg'
@@ -57,6 +58,7 @@ import svelte_svg from '$lib/images/tech/svelte.svg'
 import tailwindcss_svg from '$lib/images/tech/tailwindcss.svg'
 import tauri_svg from '$lib/images/tech/tauri.svg'
 import telegraf_svg from '$lib/images/tech/telegraf.svg'
+import turborepo_svg from '$lib/images/tech/turborepo.svg'
 import typescript_svg from '$lib/images/tech/typescript.svg'
 import ubuntu_svg from '$lib/images/tech/ubuntu.svg'
 import visualstudio_svg from '$lib/images/tech/visualstudio.svg'
@@ -87,6 +89,12 @@ export const androidStudio: Tech = {
     name: 'Android Studio',
     icon: androidstudio_svg,
     category: 'IDE'
+}
+
+export const bun: Tech = {
+    name: 'Bun',
+    icon: bun_svg,
+    category: 'JavaScript runtime'
 }
 
 export const cef: Tech = {
@@ -415,6 +423,12 @@ export const telegraf: Tech = {
     category: 'metrics collection agent'
 }
 
+export const turborepo: Tech = {
+    name: 'Turborepo',
+    icon: turborepo_svg,
+    category: 'monorepo management'
+}
+
 export const typescript: Tech = {
     name: 'TypeScript',
     icon: typescript_svg,
@@ -461,6 +475,7 @@ export const tech: Tech[] = [
     actix,
     android,
     androidStudio,
+    bun,
     cef,
     cloudFlare,
     cpp,
@@ -516,6 +531,7 @@ export const tech: Tech[] = [
     tailwind,
     tauri,
     telegraf,
+    turborepo,
     typescript,
     ubuntu,
     vs,
