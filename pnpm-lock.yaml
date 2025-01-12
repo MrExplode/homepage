@@ -8,9 +8,6 @@ importers:
 
   .:
     devDependencies:
-      '@playwright/test':
-        specifier: ^1.49.1
-        version: 1.49.1
       '@sveltejs/adapter-static':
         specifier: ^3.0.8
         version: 3.0.8(@sveltejs/kit@2.15.2(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.17.3)(vite@6.0.6(jiti@2.3.1)(yaml@2.6.1)))(svelte@5.17.3)(vite@6.0.6(jiti@2.3.1)(yaml@2.6.1)))
@@ -50,9 +47,6 @@ importers:
       globals:
         specifier: ^15.14.0
         version: 15.14.0
-      lenis:
-        specifier: ^1.1.19
-        version: 1.1.19
       lucide-svelte:
         specifier: ^0.469.0
         version: 0.469.0(svelte@5.17.3)
@@ -362,11 +356,6 @@ packages:
   '@pkgjs/parseargs@0.11.0':
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
     engines: {node: '>=14'}
-
-  '@playwright/test@1.49.1':
-    resolution: {integrity: sha512-Ky+BVzPz8pL6PQxHqNRW1k3mIyv933LML7HktS8uik0bUXNCdPhoS/kLihiO1tMf/egaJb4IutXd7UywvXEW+g==}
-    engines: {node: '>=18'}
-    hasBin: true
 
   '@polka/url@1.0.0-next.28':
     resolution: {integrity: sha512-8LduaNlMZGwdZ6qWrKlfa+2M4gahzFkprZiAt2TF8uS0qQgBizKXpXURqvTJ4WtmupWxaLqjRb2UCTe72mu+Aw==}
@@ -930,11 +919,6 @@ packages:
   fraction.js@4.3.7:
     resolution: {integrity: sha512-ZsDfxO51wGAXREY55a7la9LScWpwv9RxIrYABrlvOFBlH/ShPnrtsXeuUIfXKKOVicNxQ+o8JTbJvjS4M89yew==}
 
-  fsevents@2.3.2:
-    resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
-    engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
-    os: [darwin]
-
   fsevents@2.3.3:
     resolution: {integrity: sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
@@ -1061,17 +1045,6 @@ packages:
 
   known-css-properties@0.35.0:
     resolution: {integrity: sha512-a/RAk2BfKk+WFGhhOCAYqSiFLc34k8Mt/6NWRI4joER0EYUzXIcFivjjnoD3+XU1DggLn/tZc3DOAgke7l8a4A==}
-
-  lenis@1.1.19:
-    resolution: {integrity: sha512-EWRYEqMMcnsQgFtr67jEKaVx1mn9Dgw1rM5iT4VxxUV6ln++Cq2nahglBko2aEiD4Lik357wkLBjOjdIwjnmdQ==}
-    peerDependencies:
-      react: '>=17.0.0'
-      vue: '>=3.0.0'
-    peerDependenciesMeta:
-      react:
-        optional: true
-      vue:
-        optional: true
 
   levn@0.4.1:
     resolution: {integrity: sha512-+bT2uH4E5LGE7h/n3evcS/sQlJXCpIp6ym8OWJ5eV6+67Dsql/LaaT7qJBAt2rzfoa/5QBGBhxDix1dMt2kQKQ==}
@@ -1222,16 +1195,6 @@ packages:
   pirates@4.0.6:
     resolution: {integrity: sha512-saLsH7WeYYPiD25LDuLRRY/i+6HaPYr6G1OUlN39otzkSTxKnubR9RTxS3/Kk50s1g2JTgFwWQDQyplC5/SHZg==}
     engines: {node: '>= 6'}
-
-  playwright-core@1.49.1:
-    resolution: {integrity: sha512-BzmpVcs4kE2CH15rWfzpjzVGhWERJfmnXmniSyKeRZUs9Ws65m+RGIi7mjJK/euCegfn3i7jvqWeWyHe9y3Vgg==}
-    engines: {node: '>=18'}
-    hasBin: true
-
-  playwright@1.49.1:
-    resolution: {integrity: sha512-VYL8zLoNTBxVOrJBbDuRgDWa3i+mfQgDTrL8Ah9QXZ7ax4Dsj0MSq5bYgytRnDVVe+njoKnfsYkH3HzqVj5UZA==}
-    engines: {node: '>=18'}
-    hasBin: true
 
   postcss-import@15.1.0:
     resolution: {integrity: sha512-hpr+J05B2FVYUAXHeK1YyI267J/dDDhMU6B6civm8hSY1jYJnBXxzKDKDswzJmtLHryrjhnDjqqp/49t8FALew==}
@@ -1861,10 +1824,6 @@ snapshots:
   '@pkgjs/parseargs@0.11.0':
     optional: true
 
-  '@playwright/test@1.49.1':
-    dependencies:
-      playwright: 1.49.1
-
   '@polka/url@1.0.0-next.28': {}
 
   '@rollup/rollup-android-arm-eabi@4.28.0':
@@ -2487,9 +2446,6 @@ snapshots:
 
   fraction.js@4.3.7: {}
 
-  fsevents@2.3.2:
-    optional: true
-
   fsevents@2.3.3:
     optional: true
 
@@ -2593,8 +2549,6 @@ snapshots:
   kleur@4.1.5: {}
 
   known-css-properties@0.35.0: {}
-
-  lenis@1.1.19: {}
 
   levn@0.4.1:
     dependencies:
@@ -2713,14 +2667,6 @@ snapshots:
   pify@2.3.0: {}
 
   pirates@4.0.6: {}
-
-  playwright-core@1.49.1: {}
-
-  playwright@1.49.1:
-    dependencies:
-      playwright-core: 1.49.1
-    optionalDependencies:
-      fsevents: 2.3.2
 
   postcss-import@15.1.0(postcss@8.4.49):
     dependencies:

@@ -1,24 +1,6 @@
-# SunStorm's homepage
+# infinity icon scroller
 
-some stuff
+Animation config is in [tailwind.config.js](./tailwind.config.js), from line 85.  
+The overflow is hidden with `overflow: hidden;` ([MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow)) and styled with a `mask-image` magic. ([MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/mask-image))  
 
-## Developing
-
-Once you've created a project and installed dependencies with `pnpm install`, start a development server:
-
-```bash
-pnpm run dev
-
-# or start the server and open the app in a new browser tab
-pnpm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-pnpm run build
-```
-
-You can preview the production build with `pnpm run preview`.
+The [`TechDisplay`](./src/lib/components/tech/TechDisplay.svelte) component contains the logic.
