@@ -11,6 +11,7 @@ import dart_svg from '$lib/images/tech/dart.svg'
 import debian_svg from '$lib/images/tech/debian.svg'
 import docker_svg from '$lib/images/tech/docker.svg'
 import dotpeek_svg from '$lib/images/tech/dotpeek.svg'
+import elysia_svg from '$lib/images/tech/elysia.svg'
 import flutter_svg from '$lib/images/tech/flutter.svg'
 import git_svg from '$lib/images/tech/git.svg'
 // import github_svg from '$lib/images/tech/github-white.svg'
@@ -146,6 +147,12 @@ export const dotPeek: Tech = {
     name: 'dotPeek',
     icon: dotpeek_svg,
     category: 'tool'
+}
+
+export const elysia: Tech = {
+    name: 'Elyisa',
+    icon: elysia_svg,
+    category: 'web framework'
 }
 
 export const flutter: Tech = {
@@ -485,6 +492,7 @@ export const tech: Tech[] = [
     debian,
     docker,
     dotPeek,
+    elysia,
     flutter,
     git,
     github,
