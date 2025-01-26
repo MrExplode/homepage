@@ -1,6 +1,4 @@
 <script lang="ts">
-    import { onMount } from 'svelte'
-
     import { cn } from '@/utils'
     import { tech, type Tech } from '$lib/tech'
     import TechWidget from '@/tech/TechWidget.svelte'
@@ -11,7 +9,11 @@
 
     let { class: className }: Props = $props()
 
-    const dummy = [...tech]
+    // imitating Java's hashCode for Strings, as a quick way for deterministic shuffling
+    const hash = (t: Tech): number =>
+        [...t.name].reduce((s, c) => (Math.imul(31, s) + c.charCodeAt(0)) | 0, 0)
+
+    const dummy = [...tech].sort((a, b) => hash(a) - hash(b))
     const colNum = 5
     const colCount = Math.ceil(dummy.length / colNum)
     const cols: Tech[][] = []
