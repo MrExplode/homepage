@@ -1,6 +1,7 @@
 import actix_svg from '$lib/images/tech/actix.png'
 import android_svg from '$lib/images/tech/android.svg'
 import androidstudio_svg from '$lib/images/tech/androidstudio.svg'
+import angular_svg from '$lib/images/tech/angular.png'
 import bun_svg from '$lib/images/tech/bun.svg'
 import cef_svg from '$lib/images/tech/cef.svg'
 import cloudflare_svg from '$lib/images/tech/cloudflare.svg'
@@ -16,6 +17,7 @@ import flutter_svg from '$lib/images/tech/flutter.svg'
 import git_svg from '$lib/images/tech/git.svg'
 // import github_svg from '$lib/images/tech/github-white.svg'
 import githubDark_svg from '$lib/images/tech/github.svg'
+import gitlab_svg from '$lib/images/tech/gitlab.svg'
 import go_svg from '$lib/images/tech/go.svg'
 import goland_svg from '$lib/images/tech/goland.svg'
 import gradle_svg from '$lib/images/tech/gradle.svg'
@@ -90,6 +92,12 @@ export const androidStudio: Tech = {
     name: 'Android Studio',
     icon: androidstudio_svg,
     category: 'IDE'
+}
+
+export const angular: Tech = {
+    name: 'Angular',
+    icon: angular_svg,
+    category: 'framework'
 }
 
 export const bun: Tech = {
@@ -170,6 +178,12 @@ export const git: Tech = {
 export const github: Tech = {
     name: 'GitHub',
     icon: githubDark_svg,
+    category: 'version control'
+}
+
+export const gitlab: Tech = {
+    name: 'GitLab',
+    icon: gitlab_svg,
     category: 'version control'
 }
 
@@ -482,6 +496,7 @@ export const tech: Tech[] = [
     actix,
     android,
     androidStudio,
+    angular,
     bun,
     cef,
     cloudFlare,
@@ -496,6 +511,7 @@ export const tech: Tech[] = [
     flutter,
     git,
     github,
+    gitlab,
     go,
     goLand,
     gradle,
