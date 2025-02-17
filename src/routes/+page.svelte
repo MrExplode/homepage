@@ -11,9 +11,10 @@
 
     let index: HTMLElement | null = null
     let projects: HTMLElement | null = null
+    let lenis: Lenis | null = null
 
     if (browser) {
-        const lenis = new Lenis({ autoRaf: true })
+        lenis = new Lenis({ autoRaf: true })
         const snap = new Snap(lenis, {})
 
         $effect(() => {
@@ -36,7 +37,7 @@
         variant="outline"
         size="icon"
         class="mx-auto translate-y-20 rounded-full shadow-md"
-        onclick={() => lenis.scrollTo(projects!)}
+        onclick={() => lenis?.scrollTo(projects!)}
     >
         <ArrowDown />
     </Button>
