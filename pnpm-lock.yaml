@@ -51,8 +51,8 @@ importers:
         specifier: ^15.15.0
         version: 15.15.0
       lenis:
-        specifier: ^1.1.20
-        version: 1.1.20
+        specifier: ^1.1.22
+        version: 1.1.22
       lucide-svelte:
         specifier: ^0.475.0
         version: 0.475.0(svelte@5.20.2)
@@ -1005,12 +1005,15 @@ packages:
   known-css-properties@0.35.0:
     resolution: {integrity: sha512-a/RAk2BfKk+WFGhhOCAYqSiFLc34k8Mt/6NWRI4joER0EYUzXIcFivjjnoD3+XU1DggLn/tZc3DOAgke7l8a4A==}
 
-  lenis@1.1.20:
-    resolution: {integrity: sha512-UE64mlJEN4W8DWP2tfHzPzygk94Q2BhjzeG/YHWoyeMJ2Fd6XziBCNN+IvHwmB4GkmKIYxgr0+TvRYTSAMTMFA==}
+  lenis@1.1.22:
+    resolution: {integrity: sha512-mHNfRSKixzy/QWfo0viB7qfTOqfm5IRTa0e3A1upcsAYFJdVTqUSqifAJccNx5Vtv0FZ5xgqD2MW0VdCjBuiig==}
     peerDependencies:
+      '@nuxt/kit': '>=3.0.0'
       react: '>=17.0.0'
       vue: '>=3.0.0'
     peerDependenciesMeta:
+      '@nuxt/kit':
+        optional: true
       react:
         optional: true
       vue:
@@ -2457,7 +2460,7 @@ snapshots:
 
   known-css-properties@0.35.0: {}
 
-  lenis@1.1.20: {}
+  lenis@1.1.22: {}
 
   levn@0.4.1:
     dependencies:
