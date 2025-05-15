@@ -28,7 +28,7 @@
         "eslint-plugin-svelte": "^3.5.1",
         "globals": "^16.1.0",
         "lenis": "^1.3.3",
-        "lucide-svelte": "^0.506.0",
+        "lucide-svelte": "^0.510.0",
         "mode-watcher": "^1.0.7",
         "postcss": "^8.5.3",
         "prettier": "^3.5.3",
