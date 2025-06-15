@@ -24,7 +24,7 @@
 
 <div
     class={cn(
-        'flex gap-4 overflow-hidden [mask-image:_linear-gradient(to_top,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]',
+        'flex gap-4 overflow-hidden mask-[linear-gradient(to_top,transparent_0,black_128px,black_calc(100%-128px),transparent_100%)]',
         className
     )}
 >
@@ -32,7 +32,7 @@
         <div class="group">
             <div
                 class={cn(
-                    'group-hover:[animation-play-state:_paused]',
+                    'group-hover:paused',
                     i % 2 ? 'animate-infinite-scroll-reverse' : 'animate-infinite-scroll'
                 )}
             >
@@ -43,7 +43,7 @@
             <div
                 aria-hidden="true"
                 class={cn(
-                    'group-hover:[animation-play-state:_paused]',
+                    'group-hover:paused',
                     i % 2 ? 'animate-infinite-scroll-reverse' : 'animate-infinite-scroll'
                 )}
             >

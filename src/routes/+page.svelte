@@ -5,7 +5,7 @@
     import { Button } from '@/ui/button'
     import Bio from '@/Bio.svelte'
     import TechDisplay from '@/tech/TechDisplay.svelte'
-    import ArrowDown from 'lucide-svelte/icons/arrow-down'
+    import ArrowDown from '@lucide/svelte/icons/arrow-down'
     import ProjectDisplay from '@/projects/ProjectDisplay.svelte'
     import { browser } from '$app/environment'
 

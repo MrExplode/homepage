@@ -31,7 +31,7 @@
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 568 501"
-                class="!size-5 text-primary"
+                class="size-5! text-primary"
             >
                 <title>Bluesky butterfly logo</title>
                 <path
