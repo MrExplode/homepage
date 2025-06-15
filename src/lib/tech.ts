@@ -291,14 +291,14 @@ export const maven: Tech = {
 export const minio: Tech = {
     name: 'MinIO',
     icon: minio_svg,
-    class: 'h-14 w-auto',
+    class: 'h-50% max-h-20',
     category: 'S3 storage'
 }
 
 export const mongodb: Tech = {
     name: 'MongoDB',
     icon: mongodb_svg,
-    class: 'h-14 w-auto',
+    class: 'h-50% max-h-18',
     category: 'database'
 }
 
@@ -346,7 +346,7 @@ export const pnpm: Tech = {
 export const portainer: Tech = {
     name: 'Portainer',
     icon: portainer_svg,
-    class: 'h-14 w-auto'
+    class: 'h-50%'
 }
 
 export const postgresql: Tech = {
