@@ -13,6 +13,7 @@
         "format": "prettier --write ."
     },
     "devDependencies": {
+        "@internationalized/date": "^3.8.2",
         "@lucide/svelte": "^0.515.0",
         "@playwright/test": "^1.53.0",
         "@sveltejs/adapter-static": "^3.0.8",
