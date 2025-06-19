@@ -15,16 +15,6 @@
 
     if (browser) {
         lenis = new Lenis({ autoRaf: true })
-        const snap = new Snap(lenis, {})
-
-        $effect(() => {
-            snap.addElement(index!, {
-                align: ['start']
-            })
-            snap.addElement(projects!, {
-                align: ['start', 'center', 'end']
-            })
-        })
     }
 </script>
 
