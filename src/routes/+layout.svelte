@@ -6,7 +6,7 @@
     let { children } = $props()
 
     const description =
-        '22 year old undergraduate Full Stack Developer, DevOps enjoyer, occasionally drummer and light designer.'
+        '23 year old undergraduate Full Stack Developer, DevOps enjoyer, occasionally drummer and light designer.'
     const icon = 'https://sunstorm.rocks/icon_256.png'
 </script>
 

@@ -13,7 +13,7 @@
 <div class="flex flex-col items-center gap-4 md:items-start">
     <h1 class="text-4xl font-bold tracking-tight">SunStorm</h1>
     <p class="text-muted-foreground">
-        22 year old <TypeWriter list={descriptions} />
+        23 year old <TypeWriter list={descriptions} />
     </p>
     <div class="flex w-full justify-center border-t pt-2 md:justify-start">
         <Button href="https://github.com/MrExplode" target="_blank" variant="ghost" size="icon">
