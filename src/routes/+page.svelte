@@ -1,6 +1,5 @@
 <script lang="ts">
     import Lenis from 'lenis'
-    import Snap from 'lenis/snap'
 
     import { Button } from '@/ui/button'
     import Bio from '@/Bio.svelte'

@@ -12,7 +12,6 @@ import {
     influxdb,
     java,
     junit,
-    kotlin,
     linux,
     mariadb,
     maven,
@@ -20,7 +19,6 @@ import {
     mongodb,
     mysql,
     nginx,
-    nodejs,
     opengl,
     pnpm,
     portainer,
@@ -28,12 +26,9 @@ import {
     python,
     rabbitmq,
     redis,
-    rust,
     svelte,
     tailwind,
-    tauri,
     typescript,
-    vite,
     type Tech
 } from '$lib/tech'
 
@@ -57,7 +52,7 @@ export const projects: Project[] = [
         tech: [java, typescript, svelte, gradle, pnpm]
     },
     {
-        name: 'CornExpert',
+        name: 'thesis project',
         time: '2024',
         description:
             'A RAG-based LLM assistant, with focus on dynamic dataset loading. Fully featured user management, authentication via OAuth2. ' +
@@ -90,25 +85,11 @@ export const projects: Project[] = [
         tech: [debian, docker, portainer, nginx, grafana, influxdb, mariadb, cloudFlare]
     },
     {
-        name: 'brainmill',
-        time: '2024 - present',
-        description:
-            'A fun project exploring the possibilities of end-to-end automatization of short form content creation.',
-        tech: [typescript, nodejs, svelte, prisma, python, redis, docker]
-    },
-    {
         name: 'VrLauncher',
         time: '2022 - 2023',
         description:
             'App launcher & management suite for the Meta Quest 2 headset, with backend services for detailed analytics & data aggregation, and auto-updating.',
         tech: [csharp, go, java, mysql, grafana, android]
-    },
-    {
-        name: 'Tear',
-        time: '2024 - present',
-        description:
-            'The successor to VrLauncher, entirely redesigned with the experiences and knowledge from the previous iteration of design goals and decisions.',
-        tech: [typescript, rust, kotlin, tauri, svelte, android]
     },
     {
         name: 'MineSide',
