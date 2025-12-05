@@ -42,6 +42,11 @@ export interface Project {
 
 export const projects: Project[] = [
     {
+        name: 'coming soon...',
+        time: '2025 - present',
+        description: ''
+    },
+    {
         name: 'ShowManager',
         url: 'https://github.com/MrExplode/ShowManager',
         time: '2020 - present',

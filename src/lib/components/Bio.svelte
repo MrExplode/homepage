@@ -6,7 +6,7 @@
     import TypeWriter from '@/TypeWriter.svelte'
     import { Button } from '@/ui/button'
 
-    const descriptions = ['software developer', 'devops engineer', 'drummer', 'light designer']
+    const descriptions = ['full stack engineer', 'devops engineer', 'drummer', 'light designer']
 </script>
 
 <img src={avatar} alt="avatar" class="h-32 w-32 rounded-full" />
