@@ -13,7 +13,7 @@
     <div class="flex items-start gap-1">
         <div class="mt-1 space-y-1">
             <p class="text-xl font-bold">{project.name}</p>
-            <p class="text-sm text-muted-foreground">{project.time}</p>
+            <p class="text-muted-foreground text-sm">{project.time}</p>
         </div>
         {#if project.url}
             <Button href={project.url} target="_blank" variant="ghost" size="icon">

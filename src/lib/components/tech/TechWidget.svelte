@@ -26,7 +26,7 @@
                 <div>
                     <h3 class="font-bold tracking-tight">{t.name}</h3>
                     {#if t.category}
-                        <p class="text-sm text-muted-foreground">{t.category}</p>
+                        <p class="text-muted-foreground text-sm">{t.category}</p>
                     {/if}
                 </div>
             </div>
