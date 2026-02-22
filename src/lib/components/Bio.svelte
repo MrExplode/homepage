@@ -1,5 +1,5 @@
 <script lang="ts">
-    import avatar from '$lib/images/avatar.png'
+    import avatar from '$lib/images/avatar.webp'
     import github from '$lib/images/tech/github.svg'
     import githubWhite from '$lib/images/tech/github-white.svg'
 
