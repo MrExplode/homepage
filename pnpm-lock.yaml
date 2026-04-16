@@ -57,8 +57,8 @@ importers:
         specifier: ^17.4.0
         version: 17.4.0
       lenis:
-        specifier: ^1.3.21
-        version: 1.3.21
+        specifier: ^1.3.23
+        version: 1.3.23
       mode-watcher:
         specifier: ^1.1.0
         version: 1.1.0(svelte@5.55.1)
@@ -963,8 +963,8 @@ packages:
   known-css-properties@0.37.0:
     resolution: {integrity: sha512-JCDrsP4Z1Sb9JwG0aJ8Eo2r7k4Ou5MwmThS/6lcIe1ICyb7UBJKGRIUUdqc2ASdE/42lgz6zFUnzAIhtXnBVrQ==}
 
-  lenis@1.3.21:
-    resolution: {integrity: sha512-RXWTYm7KQE4Kv8ezxL6wvK0Oiv7aRr6FDo+eNaaniTeu7pLdHokqMIJ5CXO4x5ezvd+9ONdpSFkprLpXsVWmEw==}
+  lenis@1.3.23:
+    resolution: {integrity: sha512-YxYq3TJqj9sJNv0V9SkyQHejt14xwyIwgDaaMK89Uf9SxQfIszu+gTQSSphh6BWlLTNVKvvXAGkg+Zf+oFIevg==}
     peerDependencies:
       '@nuxt/kit': '>=3.0.0'
       react: '>=17.0.0'
@@ -2235,7 +2235,7 @@ snapshots:
 
   known-css-properties@0.37.0: {}
 
-  lenis@1.3.21: {}
+  lenis@1.3.23: {}
 
   levn@0.4.1:
     dependencies:
