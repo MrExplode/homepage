@@ -63,8 +63,8 @@ importers:
         specifier: ^1.1.0
         version: 1.1.0(svelte@5.55.4)
       postcss:
-        specifier: ^8.5.10
-        version: 8.5.10
+        specifier: ^8.5.13
+        version: 8.5.13
       prettier:
         specifier: ^3.8.3
         version: 3.8.3
@@ -85,10 +85,10 @@ importers:
         version: 3.5.0
       tailwind-variants:
         specifier: ^3.2.2
-        version: 3.2.2(tailwind-merge@3.5.0)(tailwindcss@4.2.2)
+        version: 3.2.2(tailwind-merge@3.5.0)(tailwindcss@4.2.4)
       tailwindcss:
-        specifier: ^4.2.2
-        version: 4.2.2
+        specifier: ^4.2.4
+        version: 4.2.4
       tw-animate-css:
         specifier: ^1.4.0
         version: 1.4.0
@@ -1165,8 +1165,8 @@ packages:
     resolution: {integrity: sha512-orRsuYpJVw8LdAwqqLykBj9ecS5/cRHlI5+nvTo8LcCKmzDmqVORXtOIYEEQuL9D4BxtA1lm5isAqzQZCoQ6Eg==}
     engines: {node: '>=4'}
 
-  postcss@8.5.10:
-    resolution: {integrity: sha512-pMMHxBOZKFU6HgAZ4eyGnwXF/EvPGGqUr0MnZ5+99485wwW41kW91A4LOGxSHhgugZmSChL5AlElNdwlNgcnLQ==}
+  postcss@8.5.13:
+    resolution: {integrity: sha512-qif0+jGGZoLWdHey3UFHHWP0H7Gbmsk8T5VEqyYFbWqPr1XqvLGBbk/sl8V5exGmcYJklJOhOQq1pV9IcsiFag==}
     engines: {node: ^10 || ^12 || >=14}
 
   prelude-ls@1.2.1:
@@ -1350,9 +1350,6 @@ packages:
     peerDependenciesMeta:
       tailwind-merge:
         optional: true
-
-  tailwindcss@4.2.2:
-    resolution: {integrity: sha512-KWBIxs1Xb6NoLdMVqhbhgwZf2PGBpPEiwOqgI4pFIYbNTfBXiKYyWoTsXgBQ9WFg/OlhnvHaY+AEpW7wSmFo2Q==}
 
   tailwindcss@4.2.4:
     resolution: {integrity: sha512-HhKppgO81FQof5m6TEnuBWCZGgfRAWbaeOaGT00KOy/Pf/j6oUihdvBpA7ltCeAvZpFhW3j0PTclkxsd4IXYDA==}
@@ -2057,9 +2054,9 @@ snapshots:
       esutils: 2.0.3
       globals: 16.5.0
       known-css-properties: 0.37.0
-      postcss: 8.5.10
-      postcss-load-config: 3.1.4(postcss@8.5.10)
-      postcss-safe-parser: 7.0.1(postcss@8.5.10)
+      postcss: 8.5.13
+      postcss-load-config: 3.1.4(postcss@8.5.13)
+      postcss-safe-parser: 7.0.1(postcss@8.5.13)
       semver: 7.7.3
       svelte-eslint-parser: 1.4.1(svelte@5.55.4)
     optionalDependencies:
@@ -2356,27 +2353,27 @@ snapshots:
     optionalDependencies:
       fsevents: 2.3.2
 
-  postcss-load-config@3.1.4(postcss@8.5.10):
+  postcss-load-config@3.1.4(postcss@8.5.13):
     dependencies:
       lilconfig: 2.1.0
       yaml: 1.10.2
     optionalDependencies:
-      postcss: 8.5.10
+      postcss: 8.5.13
 
-  postcss-safe-parser@7.0.1(postcss@8.5.10):
+  postcss-safe-parser@7.0.1(postcss@8.5.13):
     dependencies:
-      postcss: 8.5.10
+      postcss: 8.5.13
 
-  postcss-scss@4.0.9(postcss@8.5.10):
+  postcss-scss@4.0.9(postcss@8.5.13):
     dependencies:
-      postcss: 8.5.10
+      postcss: 8.5.13
 
   postcss-selector-parser@7.1.1:
     dependencies:
       cssesc: 3.0.0
       util-deprecate: 1.0.2
 
-  postcss@8.5.10:
+  postcss@8.5.13:
     dependencies:
       nanoid: 3.3.11
       picocolors: 1.1.1
@@ -2484,8 +2481,8 @@ snapshots:
       eslint-scope: 8.4.0
       eslint-visitor-keys: 4.2.1
       espree: 10.4.0
-      postcss: 8.5.10
-      postcss-scss: 4.0.9(postcss@8.5.10)
+      postcss: 8.5.13
+      postcss-scss: 4.0.9(postcss@8.5.13)
       postcss-selector-parser: 7.1.1
     optionalDependencies:
       svelte: 5.55.4
@@ -2529,13 +2526,11 @@ snapshots:
 
   tailwind-merge@3.5.0: {}
 
-  tailwind-variants@3.2.2(tailwind-merge@3.5.0)(tailwindcss@4.2.2):
+  tailwind-variants@3.2.2(tailwind-merge@3.5.0)(tailwindcss@4.2.4):
     dependencies:
-      tailwindcss: 4.2.2
+      tailwindcss: 4.2.4
     optionalDependencies:
       tailwind-merge: 3.5.0
-
-  tailwindcss@4.2.2: {}
 
   tailwindcss@4.2.4: {}
 
@@ -2583,7 +2578,7 @@ snapshots:
     dependencies:
       lightningcss: 1.32.0
       picomatch: 4.0.4
-      postcss: 8.5.10
+      postcss: 8.5.13
       rolldown: 1.0.0-rc.15
       tinyglobby: 0.2.15
     optionalDependencies:
