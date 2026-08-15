@@ -29,7 +29,7 @@
         "eslint-config-prettier": "^10.1.8",
         "eslint-plugin-svelte": "^3.22.0",
         "globals": "^17.8.0",
-        "lenis": "^1.3.25",
+        "lenis": "^1.3.26",
         "mode-watcher": "^1.1.0",
         "postcss": "^8.5.25",
         "prettier": "^3.9.6",
