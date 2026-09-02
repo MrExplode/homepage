@@ -14,7 +14,7 @@
     },
     "devDependencies": {
         "@internationalized/date": "^3.12.4",
-        "@lucide/svelte": "^1.31.0",
+        "@lucide/svelte": "^1.39.0",
         "@playwright/test": "^1.62.1",
         "@sveltejs/adapter-static": "^3.0.10",
         "@sveltejs/kit": "^2.70.3",
